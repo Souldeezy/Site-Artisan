@@ -5,130 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Artisan du Bois - Menuiserie & Ébénisterie d'Art</title>
     <meta name="description" content="Menuiserie et ébénisterie d'art à Condom (Gers). Création de meubles sur mesure, agencement intérieur et restauration de pièces anciennes.">
-    <link rel="stylesheet" href="artisan_style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/votre_kit_fontawesome.js" crossorigin="anonymous" async></script>
 </head>
 <body>
 
-    <!-- HEADER & NAVIGATION -->
-    <header class="site-header">
-        <div class="header-content">
-            <a href="#" class="logo">L'Artisan du Bois</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#atelier">L'Atelier</a></li>
-                    <li><a href="#contact" class="cta-nav">Contact & Devis</a></li>
-                </ul>
-            </nav>
+<header class="header-site">
+    <nav class="barre-nav">
+        <div class="nav-logo-container">
+            <div class="nav-logo"></div>
+            <a href="">L'Artisan du Bois</a>
         </div>
-    </header>
+        <ul>
+            <li>
+                <a href="">Réalisations</a>
+            </li>
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">Notre Atelier</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <a href="" class="nav-cta">Demander un devis</a>
+    </nav>
+</header>
 
-    <main>
-        <!-- SECTION HERO -->
-        <section id="accueil" class="hero-section">
-            <div class="hero-overlay"></div>
-            <div class="hero-text">
-                <h1>L'Art du Bois, Façonné avec Passion</h1>
-                <p>Menuiserie et Ébénisterie sur mesure dans le Gers.</p>
-                <a href="#contact" class="cta-button">Demander un Devis Gratuit</a>
-            </div>
-        </section>
+<main class="page-content">
 
-        <!-- SECTION RÉALISATIONS (Galerie ) -->
-        <section id="realisations" class="realisations-section">
-            <h2>Nos Dernières Réalisations</h2>
-            <p class="section-subtitle">Découvrez notre savoir-faire à travers nos projets récents.</p>
-            
-            <div class="gallery-grid">
-                <!-- Les images seront ajoutées ici. Utilisation de balises figure pour la sémantique. -->
-                <figure class="gallery-item" data-project="cuisine">
-                    <img src="placeholder_cuisine.jpg" alt="Cuisine sur mesure en chêne massif">
-                    <figcaption>Cuisine sur mesure en chêne</figcaption>
-                </figure>
-                <figure class="gallery-item" data-project="escalier">
-                    <img src="placeholder_escalier.jpg" alt="Escalier design en bois et métal">
-                    <figcaption>Escalier design</figcaption>
-                </figure>
-                <figure class="gallery-item" data-project="bibliotheque">
-                    <img src="placeholder_bibliotheque.jpg" alt="Bibliothèque intégrée en noyer">
-                    <figcaption>Bibliothèque intégrée</figcaption>
-                </figure>
-                <figure class="gallery-item" data-project="restauration">
-                    <img src="placeholder_restauration.jpg" alt="Restauration de meuble ancien">
-                    <figcaption>Restauration de meuble</figcaption>
-                </figure>
-            </div>
-            <a href="#" class="cta-button secondary-cta">Voir toutes les réalisations</a>
-        </section>
+</main>
 
-        <!-- SECTION SERVICES (Utilisation future d'un Accordéon JS) -->
-        <section id="services" class="services-section">
-            <h2>Nos Services</h2>
-            <p class="section-subtitle">De la conception à la pose, un accompagnement complet.</p>
-            
-            <div class="services-list">
-                <article class="service-item">
-                    <h3>Menuiserie Intérieure</h3>
-                    <p>Portes, fenêtres, parquets, isolation. Travail traditionnel et moderne.</p>
-                    <button class="service-details-toggle" data-target="menuiserie">Détails</button>
-                    <div id="menuiserie" class="service-details-content">
-                        <!-- Contenu masqué par défaut, affiché par JS -->
-                        <p>Nous réalisons l'ensemble de vos travaux de menuiserie intérieure, en neuf comme en rénovation, avec des matériaux locaux et durables.</p>
-                    </div>
-                </article>
-                
-                <article class="service-item">
-                    <h3>Ébénisterie Sur Mesure</h3>
-                    <p>Création de meubles uniques : tables, bibliothèques, dressings, agencements de magasins.</p>
-                    <button class="service-details-toggle" data-target="ebenisterie">Détails</button>
-                    <div id="ebenisterie" class="service-details-content">
-                        <!-- Contenu masqué par défaut, affiché par JS -->
-                        <p>Chaque pièce est dessinée et fabriquée dans notre atelier, garantissant une adaptation parfaite à votre espace et à vos envies.</p>
-                    </div>
-                </article>
-                
-                <article class="service-item">
-                    <h3>Restauration de Mobilier</h3>
-                    <p>Redonnez vie à vos meubles anciens. Expertise en techniques traditionnelles de restauration.</p>
-                    <button class="service-details-toggle" data-target="restauration">Détails</button>
-                    <div id="restauration" class="service-details-content">
-                        <!-- Contenu masqué par défaut, affiché par JS -->
-                        <p>Nous travaillons avec respect des matériaux d'origine pour préserver l'histoire et la valeur de vos pièces de collection.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+<footer class="footer-site">
 
-        <!-- SECTION CONTACT -->
-        <section id="contact" class="contact-section">
-            <h2>Un Projet ? Contactez-nous.</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p><strong>L'Artisan du Bois</strong></p>
-                    <p>12 Rue des Compagnons, 32100 Condom</p>
-                    <p>Téléphone : 05 62 XX XX XX</p>
-                    <p>Email : contact@artisan-bois-gers.fr</p>
-                </div>
-                <form class="contact-form">
-                    <input type="text" name="nom" placeholder="Votre Nom *" required>
-                    <input type="email" name="email" placeholder="Votre Email *" required>
-                    <textarea name="message" placeholder="Décrivez votre projet..." required></textarea>
-                    <button type="submit" class="cta-button">Envoyer ma Demande</button>
-                </form>
-            </div>
-        </section>
-    </main>
+    <div class="footer-top">
+        <div class="foot-logo-container">
+            <div class="foot-logo"></div>
+            <a href="">L'Artisan du Bois</a>
+        </div>
+        <p class="foot-top-content">Une expérience de 30 ans dans l'ébénisterie. Travail avec des bois de haute qualité. Matériaux conçus pour durer</p>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>&copy; 2024 L'Artisan du Bois. Tous droits réservés. | <a href="#">Mentions Légales</a> | Création : [Votre Nom]</p>
-    </footer>
+    <div class="footer-center">
+        <div class="foot-center-item">
+            <h3>Horaires et Adresse</h3>
+            <ul>
+                <li class="fc-line"><span>Heures d'Ouverture </span>: <span class="horaires">8h/12h - 14h/19h</span><br> (Fermé Samedi et Dimanche)</li>
+                <li class="fc-line"><span>Adresse </span>: 55, Rue Jules Ferry, 32000 AUCH</li>
+            </ul>
+        </div>
+        <div class="foot-center-item">
+            <h3>Le Site</h3>
+            <ul>
+                <li class="fc-line"><a href="">Nos Services</a></li>
+                <li class="fc-line"><a href="">Nos Réalisations</a></li>
+                <li class="fc-line"><a href="">Notre Atelier</a></li>
+                <li class="fc-line"><a href="">Label Qualité</a></li>
+            </ul>
+        </div>
+        <div class="foot-center-item">
+            <h3>Réseaux</h3>
+            <ul>
+                <li class="fc-line"><a href="">@facebook/lartisanduBois32</a></li>
+                <li class="fc-line"><a href="">@instagram/lartisanduBois32</a></li>
+                <li class="fc-line" id="mentions"><a href="">Mentions Légales</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&#xa9; 2025 <strong>L'Artisan du Bois</strong>. Site édité par <strong>Deezy</strong>. Propulsé par
+        <strong>Netlify</strong>.
+    </div>
+
+</footer>
 
 </body>
 </html>
