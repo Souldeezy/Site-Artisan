@@ -249,34 +249,32 @@ html {
 
 .cat-item-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background: url(.//PICTURES/FondEcranBois4.webp);
   background-size: cover;
   background-position: center;
-  padding: 80px 20px;
-  gap: 50px;
+  padding: 50px;
+  gap: 30px;
  
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.79);
 }
 
+.cti-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .cat-item {
-  background: url(.//PICTURES/FondEcranBois2.webp);
   height: 60%;
   display: flex;
-  border: 2px solid rgba(255, 225, 196, 0.814);
   border-radius: 10px;
   align-items: center;
   gap: 0px;
-  width: 600px;
+  width: 700px;
   border-radius: 10px;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: lighten;
-  background-color: rgba(255, 225, 196, 0.856);
+
   padding: 0px 0px;
-  height: 200px;
+  height: 150px;
 }
 
 
@@ -290,10 +288,10 @@ html {
 }
 
 .ci-title {
-  color: rgb(54, 31, 7);
+  color: rgba(255, 225, 196, 0.934);
   font-size: 22px;
-  padding: 30px 10px;
-  border: 2px dotted rgb(54, 31, 7);
+  padding: 20px 10px;
+  border: 2px dotted rgba(255, 225, 196, 0.934);
   border-radius: 10px;
   font-weight: bold;
   width: 35%;
@@ -301,11 +299,12 @@ html {
 }
 
 .ci-texte {
-  color: rgb(54, 31, 7);
-  width: 60%;
+  color: rgba(255, 225, 196, 0.934);
+  width: 80%;
   font-family: "Cormorant Unicase", sans-serif;
   font-size: 17px;
   font-weight: bold;
+  padding: 10px 0px;
 }
 
 
