@@ -106,3 +106,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Observer pour détecter quand .contCtaMain entre dans la vue
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Sélectionner tous les éléments à animer
+        const numeros = entry.target.querySelectorAll('.ccidl-numero');
+        const logos = entry.target.querySelectorAll('[class^="cci-logo-"]');
+        const textes = entry.target.querySelectorAll('.ccidl-texte');
+        const fleches = entry.target.querySelectorAll('.fa-angles-right');
+        
+        // Ajouter la classe is-visible à tous
+        numeros.forEach(num => num.classList.add('is-visible'));
+        logos.forEach(logo => logo.classList.add('is-visible'));
+        textes.forEach(texte => texte.classList.add('is-visible'));
+        fleches.forEach(fleche => fleche.classList.add('is-visible'));
+        
+        // Désobserver après animation
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.6
+  });
+
+  const ctaContainer = document.querySelector('.contCtaMain');
+  if (ctaContainer) {
+    observer.observe(ctaContainer);
+  }
+});
+
+
+

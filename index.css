@@ -457,10 +457,6 @@ html {
 
 /* SECTION FORMULAIRE........................................... */
 /* ............................................................. */
-.contCtaMain {
-  display: flex;
-  flex-direction: column;
-}
 
 .contCtaTop {
   display: flex;
@@ -476,8 +472,11 @@ html {
     font-family: "Cormorant Unicase", sans-serif;
   font-size: 30px;
   font-style: italic;
+  z-index: 2;
 
 }
+
+/* CONT CTA MAIN ......................................................... */
 
 .contCtaMain {
   display: flex;
@@ -649,7 +648,6 @@ html {
   background-image: url("data:image/svg+xml,%3Csvg height='200px' width='200px' version='1.1' id='_x32_' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512' xml:space='preserve' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:rgba(255, 225, 196, 1);%7D %3C/style%3E%3Cg%3E%3Cpath class='st0' d='M116.683,354.34c-26.836,0-48.607,21.764-48.607,48.6c0,26.85,21.771,48.614,48.607,48.614 c26.844,0,48.608-21.764,48.608-48.614C165.29,376.104,143.526,354.34,116.683,354.34z M116.683,424.826 c-12.08,0-21.872-9.799-21.872-21.886c0-12.073,9.792-21.865,21.872-21.865c12.08,0,21.872,9.792,21.872,21.865 C138.554,415.027,128.762,424.826,116.683,424.826z'%3E%3C/path%3E%3Cpath class='st0' d='M403.8,354.34c-26.836,0-48.6,21.764-48.6,48.6c0,26.85,21.764,48.614,48.6,48.614 c26.843,0,48.606-21.764,48.606-48.614C452.406,376.104,430.643,354.34,403.8,354.34z M403.8,424.826 c-12.073,0-21.865-9.799-21.865-21.886c0-12.073,9.792-21.865,21.865-21.865c12.079,0,21.871,9.792,21.871,21.865 C425.671,415.027,415.879,424.826,403.8,424.826z'%3E%3C/path%3E%3Cpath class='st0' d='M200.127,128.622H90.502c-3.561,0-6.957,1.582-9.23,4.331l-78.48,94.163C0.986,229.268,0,231.994,0,234.815 v82.595v43.189c0,6.648,5.389,12.029,12.03,12.029h36.844c11.626-25.9,37.621-44.024,67.81-44.024 c30.196,0,56.183,18.124,67.81,44.024h27.671V140.652C212.163,134.003,206.767,128.622,200.127,128.622z M43.931,236.052 c0-2.849,0.978-5.612,2.777-7.82l50.103-61.694c2.36-2.907,5.9-4.59,9.633-4.59h49.083c6.848,0,12.404,5.554,12.404,12.411v70.011 c0,6.849-5.555,12.404-12.404,12.404H56.334c-6.85,0-12.404-5.554-12.404-12.404V236.052z'%3E%3C/path%3E%3Cpath class='st0' d='M243.532,338.792c-3.741,0-6.763,3.03-6.763,6.77v20.303c0,3.735,3.022,6.763,6.763,6.763h92.466 c6.382-14.209,17.072-26.023,30.419-33.836H243.532z'%3E%3C/path%3E%3Cpath class='st0' d='M504.381,338.792h-63.19c13.353,7.814,24.044,19.627,30.419,33.836h32.772c3.741,0,6.77-3.028,6.77-6.763 v-20.303C511.151,341.822,508.122,338.792,504.381,338.792z'%3E%3C/path%3E%3Cpath class='st0' d='M497.568,60.446H252.043c-7.964,0-14.425,6.46-14.425,14.432v226.703c0,7.972,6.461,14.432,14.425,14.432 h245.525c7.971,0,14.432-6.46,14.432-14.432V74.878C512,66.906,505.539,60.446,497.568,60.446z M458.27,134.09H291.355 c-3.741,0-6.771-3.036-6.771-6.763v-13.533c0-3.741,3.03-6.77,6.771-6.77H458.27c3.735,0,6.763,3.029,6.763,6.77v13.533 C465.033,131.054,462.005,134.09,458.27,134.09z M291.355,174.697H458.27c3.735,0,6.763,3.021,6.763,6.763V195 c0,3.727-3.028,6.763-6.763,6.763H291.355c-3.741,0-6.771-3.036-6.771-6.763v-13.54 C284.584,177.718,287.614,174.697,291.355,174.697z M291.355,242.369H458.27c3.735,0,6.763,3.022,6.763,6.763v13.533 c0,3.727-3.028,6.77-6.763,6.77H291.355c-3.741,0-6.771-3.044-6.771-6.77v-13.533C284.584,245.391,287.614,242.369,291.355,242.369 z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-
 .cci-details-logo {
   display: flex; 
   align-items: center;
@@ -693,9 +691,159 @@ html {
 }
 
 
+/* États initiaux (cachés) */
+.ccidl-numero {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.cci-logo-1, .cci-logo-2, .cci-logo-3, .cci-logo-4, .cci-logo-5 {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.ccidl-texte {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* États visibles */
+.ccidl-numero.is-visible {
+  opacity: 1;
+}
+
+.cci-logo-1.is-visible, 
+.cci-logo-2.is-visible, 
+.cci-logo-3.is-visible, 
+.cci-logo-4.is-visible, 
+.cci-logo-5.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ccidl-texte.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Délais pour chaque item avec nth-child */
+/* Item 1 */
+.contCta-item:nth-child(1) .ccidl-numero {
+  transition-delay: 0s;
+}
+.contCta-item:nth-child(1) .cci-logo-1 {
+  transition-delay: 0.3s;
+}
+.contCta-item:nth-child(1) .ccidl-texte {
+  transition-delay: 0.6s;
+}
+
+/* Item 2 */
+.contCta-item:nth-child(3) .ccidl-numero {
+  transition-delay: 1.1s;
+}
+.contCta-item:nth-child(3) .cci-logo-2 {
+  transition-delay: 1.4s;
+}
+.contCta-item:nth-child(3) .ccidl-texte {
+  transition-delay: 1.7s;
+}
+
+/* Item 3 */
+.contCta-item:nth-child(5) .ccidl-numero {
+  transition-delay: 2.2s;
+}
+.contCta-item:nth-child(5) .cci-logo-3 {
+  transition-delay: 2.5s;
+}
+.contCta-item:nth-child(5) .ccidl-texte {
+  transition-delay: 2.8s;
+}
+
+/* Item 4 */
+.contCta-item:nth-child(7) .ccidl-numero {
+  transition-delay: 3.3s;
+}
+.contCta-item:nth-child(7) .cci-logo-4 {
+  transition-delay: 3.6s;
+}
+.contCta-item:nth-child(7) .ccidl-texte {
+  transition-delay: 3.9s;
+}
+
+/* Item 5 */
+.contCta-item:nth-child(9) .ccidl-numero {
+  transition-delay: 4.4s;
+}
+.contCta-item:nth-child(9) .cci-logo-5 {
+  transition-delay: 4.7s;
+}
+.contCta-item:nth-child(9) .ccidl-texte {
+  transition-delay: 5s;
+}
+
+/* Animation pour les flèches aussi (optionnel) */
+.contCta .fa-angles-right {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.contCta .fa-angles-right.is-visible {
+  opacity: 1;
+}
+
+.contCta > .fa-angles-right:nth-child(2) {
+  transition-delay: 0.9s;
+}
+.contCta > .fa-angles-right:nth-child(4) {
+  transition-delay: 2s;
+}
+.contCta > .fa-angles-right:nth-child(6) {
+  transition-delay: 3.1s;
+}
+.contCta > .fa-angles-right:nth-child(8) {
+  transition-delay: 4.2s;
+}
+.contCta > .fa-angles-right:nth-child(10) {
+  transition-delay: 5.3s;
+}
+
+/* La dernière flèche - CACHÉE au départ */
+.contCta > .fa-angles-right:nth-child(10) {
+  opacity: 0;
+  color: rgba(251, 155, 65, 0.905); /* Orange */
+  transition: opacity 0.6s ease-out;
+}
+
+/* Apparition après l'item 5 (camion) */
+.contCta > .fa-angles-right:nth-child(10).is-visible {
+  opacity: 1;
+  transition-delay: 5.4s; /* Apparaît APRÈS l'item 5 qui finit à 11.8s + 0.6s */
+}
 
 
+.contCta-button {
+  padding: 10px 25px;
+  color: rgba(251, 155, 65, 0.905);
+  position: absolute;
+  bottom: 4%;
+  right: 11%;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Cormorant Unicase", sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  border-radius: 5px;
+}
 
+.contCta-button:hover {
+  color: rgb(57, 222, 57);
+  transition: 0.3s ease-in-out;
+  
+}
 
 /* FOOTER PAGE.................................................. */
 /* ............................................................. */
@@ -890,6 +1038,18 @@ html {
   animation: heartbeat 3s infinite;
 }
 
+/* Appliquer les animations */
+.contCta > .fa-angles-right:nth-child(10).is-visible {
+  
+  animation: 
+    turnGreen 1s ease-out 5.9s forwards, /* Tourne et devient vert à 12.7s */
+    bounceVertical 5s ease-in-out 6.7s infinite; /* Bounce infini à 13.3s */
+}
+
+.contCta-button {
+  animation: fadeInUp 1s ease-out 6.5s forwards, UnderlineEffect 2.5s ease-in-out 7s forwards;
+}
+
 /* KEYFRAMES.................................................... */
 /* ............................................................. */
 
@@ -906,4 +1066,60 @@ html {
   }
 
 }
+
+@keyframes turnGreen {
+  from {
+    transform: rotate(0deg);
+    color: rgba(251, 155, 65, 0.905);
+    
+  }
+  to {
+    transform: rotate(90deg);
+    color: rgba(251, 155, 65, 0.905);
+    
+    
+  }
+}
+
+/* Bounce VERTICAL (haut en bas) */
+@keyframes bounceVertical {
+  0%, 100% {
+    transform: rotate(90deg) translateX(0);
+  }
+  50% {
+    transform: rotate(90deg) translateX(10px);
+    }
+}
+
+
+/* @KEYFRAMES FADEINUP............................................... */
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes UnderlineEffect {
+  0% {
+    text-decoration: none;
+    text-decoration-thickness: 0px;
+    text-underline-offset: 7px;
+  } 
+
+  100% {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 7px;
+  }
+}
+
+
 
