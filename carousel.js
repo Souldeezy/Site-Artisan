@@ -140,5 +140,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Ajoutez ce code à votre fichier JS existant ou dans un <script>
 
+document.addEventListener('DOMContentLoaded', () => {
+  const observerLabels = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const images = entry.target.querySelectorAll('img');
+        images.forEach(img => {
+          img.classList.add('is-visible');
+        });
+        
+        // Optionnel : désobserver après animation
+        observerLabels.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3 // Se déclenche quand 30% de la section est visible
+  });
+
+  const labelsContainer = document.querySelector('.cont-labels');
+  if (labelsContainer) {
+    observerLabels.observe(labelsContainer);
+  }
+});
 
