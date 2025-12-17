@@ -261,7 +261,8 @@ html {
   text-align: center;
   display: flex;
   align-items: center;
-  border: 2px dotted rgba(255, 225, 196, 0.934);
+  border-top: 2px dotted rgba(255, 225, 196, 0.934);
+  border-bottom: 2px dotted rgba(255, 225, 196, 0.934);
 }
 
 .cat-item-list {
@@ -1042,8 +1043,8 @@ html {
 }
 
 .cont-labels img {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 300px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
